@@ -1,0 +1,8 @@
+lvj@lvj-Lenovo-ideapad-300-17ISK:~$ cat /proc/sys/fs/inotify/max_user_watches
+8192
+lvj@lvj-Lenovo-ideapad-300-17ISK:~$ echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+[sudo] password for lvj: 
+fs.inotify.max_user_watches=524288
+fs.inotify.max_user_watches = 524288
+lvj@lvj-Lenovo-ideapad-300-17ISK:~$ cat /proc/sys/fs/inotify/max_user_watches
+524288
